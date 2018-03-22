@@ -23,25 +23,20 @@ h3 {
   font-size: 2rem;
   margin-top: 10px;
 }
-#mael {
+.date {
   font:bold 1.5rem 'Love Ya Like A Sister', cursive;
   letter-spacing: 2px; 
   padding: 10px;
   background-color: #b0d8f5;
   border: solid 2px #a3d2f3;
-  width: 100px;
+  width: 30%;
   margin: 0 auto;
- 
-  top: 92px;
-    left: 700px;
-   /*  -webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
-    -ms-transform: scale(0.4);
-	transform: scale(0.4); */
-	opacity: 0.4; 
     -webkit-animation: movingclouds 29s linear infinite;
 	-moz-animation: movingclouds 29s linear infinite;
 	-o-animation: movingclouds 29s linear infinite;
+}
+.date p {
+    margin:0 0 5px;
 }
 .info {
   width:50%;
