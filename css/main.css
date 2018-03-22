@@ -54,12 +54,40 @@ h3 {
   left:0px;
 }
 .left ul li {
-  /*float:left;*/
   margin-right:5px;
 }
 .right {
   margin-right:30px;
   right:0px;
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-top: 350px;
+        /* visibility: hidden; */
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .info {
+        top: 120%;
+    }
+    .left {
+        left: 0;
+        margin-left: 0;
+    }
+    .right {
+        right: 0;
+        margin-right: 0;
+    }
+    .date {
+        position: absolute;
+        bottom: 0;
+    }
 }
   
   .wrapper {
