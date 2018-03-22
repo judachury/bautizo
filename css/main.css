@@ -1,0 +1,401 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  background: linear-gradient(to bottom right, #7EC0EE, #eff7fd) fixed;
+  font-family: 'Schoolbell', cursive;
+  text-align: center;
+}
+h1 {
+    font-size: 5rem;
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin-top: 0;
+}
+
+h2 {
+  font-family: 'Love Ya Like A Sister', cursive;
+  margin: 300px auto 10px;
+  font-size: 3rem;
+  max-width: 60%;
+}
+h3 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+#mael {
+  font:bold 1.5rem 'Love Ya Like A Sister', cursive;
+  letter-spacing: 2px; 
+  padding: 10px;
+  background-color: #b0d8f5;
+  border: solid 2px #a3d2f3;
+  width: 100px;
+  margin: 0 auto;
+ 
+  top: 92px;
+    left: 700px;
+   /*  -webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+	transform: scale(0.4); */
+	opacity: 0.4; 
+    -webkit-animation: movingclouds 29s linear infinite;
+	-moz-animation: movingclouds 29s linear infinite;
+	-o-animation: movingclouds 29s linear infinite;
+}
+.info {
+  width:50%;
+  position:absolute;
+  top: 50%;
+  font-size: 1.1rem;
+}
+.info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.left {
+  margin-left:30px;
+  left:0px;
+}
+.left ul li {
+  /*float:left;*/
+  margin-right:5px;
+}
+.right {
+  margin-right:30px;
+  right:0px;
+}
+  
+  .wrapper {
+    height: 340px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 80px auto;
+    z-index: 2;
+    filter: drop-shadow(0 0 3px #333);
+  }
+  .wrapper .sun {
+    height: 200px;
+    width: 200px;
+    background: #D7CE33;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+  }
+  .wrapper .sun .rays {
+    height: 200px;
+    width: 200px;
+    transform-origin: center center;
+    animation: rotate 10s infinite;
+    z-index: 1;
+  }
+  .wrapper .sun .rays .ray {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 100px #C09726 solid;
+    z-index: -1;
+    transform-origin: center center;
+  }
+  .wrapper .sun .rays .ray#n_0 {
+    transform: rotateZ(0deg) !important;
+  }
+  .wrapper .sun .rays .ray#n_1 {
+    transform: rotateZ(22.5deg) !important;
+  }
+  .wrapper .sun .rays .ray#n_2 {
+    transform: rotateZ(45deg) !important;
+  }
+  .wrapper .sun .rays .ray#n_3 {
+    transform: rotateZ(67.5deg) !important;
+  }
+  .wrapper .sun .rays .ray#n_4 {
+    transform: rotateZ(90deg) !important;
+  }
+  .wrapper .sun .face {
+    height: 200px;
+    width: 200px;
+    background: #D7CE33;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .wrapper .sun .face .eyes {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: -46px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 100%;
+    box-shadow: 40px 0 0 #000, -40px 0 0 #000;
+  }
+  .wrapper .sun .face .mouth {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -46px;
+    left: 0;
+    margin: auto;
+    border: 4px transparent solid;
+    border-bottom: 4px #000 solid;
+    border-right: 4px #000 solid;
+    border-radius: 100%;
+    transform: rotate(45deg);
+  }
+  .wrapper .text {
+    position: absolute;
+    top: 360px;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    font-size: 48px;
+    text-align: center;
+    font-family: "Sunshiney";
+  }
+  
+  .whitespace {
+    height: 40px;
+    position: absolute;
+    bottom: -40px;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+  /*clouds*/
+  #sky {
+    overflow: hidden;
+    position: relative;
+   /*  background: #C6D9E8;
+	background: -webkit-linear-gradient(top, #C6D9E8 0%, #fff 100%);
+	background: -linear-gradient(top, #C6D9E8 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #C6D9E8 0%, #fff 100%); */
+    height: 400px;
+}
+
+.cloud {
+    position: absolute;
+    background-image: url('https://www.dl.dropboxusercontent.com/s/31ivp5fsjcgytgp/cloud1.png');
+    background-repeat: no-repeat;
+    width: 176px;
+    height: 114px;
+}
+
+#cloud1 {
+    top: 40px;
+    left: 400px;
+    -webkit-animation: movingclouds 10s linear infinite;
+	-moz-animation: movingclouds 10s linear infinite;
+	-o-animation: movingclouds 10s linear infinite;
+}
+
+#cloud2 {
+    top: 10px;
+    left: 600px;
+    -webkit-animation: movingclouds 13s linear infinite;
+	-moz-animation: movingclouds 13s linear infinite;
+	-o-animation: movingclouds 13s linear infinite;
+}
+
+#cloud3 {
+    top: 100px;
+    left: 100px;
+    -webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0.9; 
+    -webkit-animation: movingclouds 15s linear infinite;
+	-moz-animation: movingclouds 15s linear infinite;
+	-o-animation: movingclouds 15s linear infinite;
+}
+
+#cloud4 {
+    top: -20px;
+    left: 40px;
+    -webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; 
+    -webkit-animation: movingclouds 20s linear infinite;
+	-moz-animation: movingclouds 20s linear infinite;
+	-o-animation: movingclouds 20s linear infinite;
+}
+
+#cloud5 {
+    top: 100px;
+    left: 500px;
+    -webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0.7; 
+    -webkit-animation: movingclouds 25s linear infinite;
+	-moz-animation: movingclouds 25s linear infinite;
+	-o-animation: movingclouds 25s linear infinite;
+}
+
+#cloud6 {
+    top: 20px;
+    left: 200px;
+    -webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+	transform: scale(0.5);
+	opacity: 0.5; 
+    -webkit-animation: movingclouds 27s linear infinite;
+	-moz-animation: movingclouds 27s linear infinite;
+	-o-animation: movingclouds 27s linear infinite;
+}
+
+#cloud7 {
+    top: 92px;
+    left: 700px;
+    -webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+	transform: scale(0.4);
+	opacity: 0.4; 
+    -webkit-animation: movingclouds 29s linear infinite;
+	-moz-animation: movingclouds 29s linear infinite;
+	-o-animation: movingclouds 29s linear infinite;
+}
+
+/* #aeroplane{
+    position: absolute;
+    background-image: url('https://www.dl.dropboxusercontent.com/s/5beukq1zg37jlr7/airbus.png');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 70px;
+    -webkit-animation: movingplane 10s linear infinite;
+	-moz-animation: movingplane 10s linear infinite;
+    -o-animation: movingplane 10s linear infinite;
+} */
+@keyframes movingclouds {
+	0% {margin-left: 100%;}
+	100% {margin-left: -150%;}
+}
+@-webkit-keyframes movingclouds {
+	0% {margin-left: 100%;}
+	100% {margin-left: -150%;}
+}
+@-moz-keyframes movingclouds {
+	0% {margin-left: 100%;}
+	100% {margin-left: -150%;}
+}
+@keyframes movingplane {
+	0% { 
+        margin-left: 100%;
+        top:300px;
+    }
+    29% { 
+        margin-left: 50%; 
+        top: 50px; 
+        -webkit-transform: rotate(20deg);
+	    -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+	    transform: rotate(20deg);
+    }
+    31% {
+        -webkit-transform: rotate(-20deg);
+	    -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+	    transform: rotate(-20deg);
+    }
+    60% {
+        margin-left: 0%; 
+        top 300px;    
+    }
+    100% {
+        margin-left: -100%;
+        top: 300px;
+    }
+}
+@-webkit-keyframes movingplane {
+	0% { 
+        margin-left: 100%;
+        top:300px;
+    }
+    29% { 
+        margin-left: 50%; 
+        top: 50px; 
+        -webkit-transform: rotate(20deg);
+	    -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+	    transform: rotate(20deg);
+    }
+    31% {
+        -webkit-transform: rotate(-20deg);
+	    -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+	    transform: rotate(-20deg);
+    }
+    60% {
+        margin-left: 0%; 
+        top 300px;    
+    }
+    100% {
+        margin-left: -100%;
+        top: 300px;
+    }
+}
+@-moz-keyframes movingplane {
+	0% { 
+        margin-left: 100%;
+        top:300px;
+    }
+    29% { 
+        margin-left: 50%; 
+        top: 50px; 
+        -webkit-transform: rotate(20deg);
+	    -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+	    transform: rotate(20deg);
+    }
+    31% {
+        -webkit-transform: rotate(-20deg);
+	    -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+	    transform: rotate(-20deg);
+    }
+    60% {
+        margin-left: 0%; 
+        top 300px;    
+    }
+    100% {
+        margin-left: -100%;
+        top: 300px;
+    }
+}
